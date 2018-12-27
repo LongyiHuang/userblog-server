@@ -6,12 +6,15 @@ import fs from 'fs';
 import BaizeCode from '../utils/encrypt/baize_coder';
 import path from 'path';
 import User from '../models/user';
-import {AES_KEY, IV} from "../constants";
+import {AES_KEY, IV} from "../constants/index";
 import {authenticateVerify} from '../middlewares/authenticate';
 import {getRedis} from "../redis";
+
+
+
+
+
 var rsaPath = path.resolve(__dirname,'../utils/encrypt/rsa/512');
-
-
 var router = express.Router();
 var redisClient = getRedis(0);
 

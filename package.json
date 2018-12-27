@@ -2,14 +2,14 @@
   "name": "userblog-server",
   "version": "1.0.0",
   "description": "User blog system",
-  "main": "app.js",
+  "main": "src/app.js",
   "repository": "https://github.com/LongyiHuang/userblog-server.git",
   "author": "huanglongyi <475865662@qq.com>",
   "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "export NODE_ENV=development && nodemon --exec babel-node -- app.js",
-    "build": "export NODE_ENV=production && babel-node app.js"
+    "start": "export NODE_ENV=development && nodemon --exec babel-node -- src/app.js",
+    "build": "export NODE_ENV=production && babel-node src/app.js"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
