@@ -14,11 +14,13 @@ import {getRedis} from "../redis";
 
 
 
-var rsaPath = path.resolve(__dirname,'/src/utils/encrypt/rsa/512');
+var rsaPath = path.resolve(path.resolve("."),'./src/utils/encrypt/rsa/512');
 
 
 var router = express.Router();
 var redisClient = getRedis(0);
+
+
 
 router.post('/logout',function (req, res, next) {
     var responseConten;

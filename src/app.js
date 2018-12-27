@@ -8,6 +8,7 @@ import sessionRouter from './routes/sessionRouter';
 var bodyParser = require('body-parser');
 
 
+
 var app = express();
 app.use(bodyParser.json());
 // app.use(cookieParser());
@@ -34,6 +35,8 @@ app.use('/api/session',sessionRouter);
 app.listen(7000,function () {
     console.log('Server started on port 7000...');
 })
+
+
 
 //
 // redisClient.set('token','tokenVolue');
