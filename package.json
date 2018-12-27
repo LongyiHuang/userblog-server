@@ -9,7 +9,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "export NODE_ENV=development && nodemon --exec babel-node -- src/app.js",
-    "build": "export NODE_ENV=production && babel-node src/app.js"
+    "build": "export NODE_ENV=production && babel-node src/app.js",
+    "babel:server": "babel src --out-dir build",
+    "build:pm2":"pm2 start ecosystem.config.js --only prod-implant --watch"
   },
   "dependencies": {
     "body-parser": "^1.18.3",

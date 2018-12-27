@@ -1,19 +1,15 @@
 module.exports = {
   apps : [{
-    name: 'Es6',
-    script: 'es6.js',
+    name: 'prod-implant',
+    script: './build/app.js',
     node_args:"--harmony",
     // Options reference: https://pm2.io/doc/en/runtime/reference/ecosystem-file/
-    args: 'one two',
     instances: 1,
     autorestart: true,
-    watch: false,
+    watch: true,
     max_memory_restart: '1G',
     env: {
-      NODE_ENV: 'development'
-    },
-    env_production: {
-      NODE_ENV: 'production'
+        "NODE_ENV": "production",
     }
   }],
 
