@@ -25,9 +25,9 @@ app.use(bodyParser.json());
 // app.use('/', express.static(path.join(__dirname, '..', 'client')));
 
 //路由
-app.use('/article',articleRouter);
-app.use('/user',userRouter);
-app.use('/session',sessionRouter);
+app.use('/api/article',articleRouter);
+app.use('/api/user',userRouter);
+app.use('/api/session',sessionRouter);
 
 
 
