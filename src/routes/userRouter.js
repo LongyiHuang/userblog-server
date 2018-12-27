@@ -14,7 +14,9 @@ import {getRedis} from "../redis";
 
 
 
-var rsaPath = path.resolve(__dirname,'../utils/encrypt/rsa/512');
+var rsaPath = path.resolve(__dirname,'/src/utils/encrypt/rsa/512');
+
+
 var router = express.Router();
 var redisClient = getRedis(0);
 
